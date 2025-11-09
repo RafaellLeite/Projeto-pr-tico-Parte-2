@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projeto: Página Web - Currículo Funcional</title>
+  <style>
+    :root{--bg:#f8f9fb;--card:#ffffff;--accent:#0d6efd;--text:#222}
+    *{box-sizing:border-box}
+    body{font-family:Georgia, 'Times New Roman', serif;background:var(--bg);color:var(--text);margin:0;padding:20px}
+    .container{max-width:900px;margin:0 auto}
+    header{background:var(--card);padding:24px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.06);text-align:center}
+    header h1{margin:6px 0;font-size:18px}
+    header p{margin:4px 0;color:#555}
+    nav{margin:18px 0;display:flex;flex-wrap:wrap;gap:8px}
+    .btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;border:none;cursor:pointer}
+    .btn.secondary{background:#6c757d}
+    .card{background:var(--card);padding:20px;border-radius:8px;margin-bottom:16px;box-shadow:0 2px 6px rgba(0,0,0,.04)}
+    h2{margin-top:0}
+    p{line-height:1.6;text-align:justify}
+    pre{white-space:pre-wrap;font-family:inherit}
+    footer{font-size:13px;color:#555;text-align:center;margin:18px 0}
+    @media (max-width:600px){body{padding:12px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p>Unic – Beira Rio</p>
+      <p>Analise e Desenvolvimento de Sistemas</p>
+      <h1>Rafael da Silva Leite</h1>
+      <p>Projeto prático – Parte 2 Finalização e apresentação dos projetos</p>
+      <p>Cuiabá – MT</p>
+      <p>2025</p>
+    </header>
+
+    <nav>
+      <button class="btn" onclick="goTo('introducao')">1. Introdução</button>
+      <button class="btn" onclick="goTo('objetivos')">2. Objetivos</button>
+      <button class="btn" onclick="goTo('metodologia')">3. Metodologia / Desenvolvimento</button>
+      <button class="btn" onclick="goTo('resultados')">4. Resultados</button>
+      <button class="btn" onclick="goTo('conclusao')">5. Conclusão</button>
+      <button class="btn" onclick="goTo('referencias')">Referências</button>
+      <button class="btn secondary" onclick="printDoc()">Imprimir / Salvar PDF</button>
+    </nav>
+
+    <section id="introducao" class="card">
+      <h2>1. Introdução</h2>
+      <p>Com a crescente digitalização das comunicações e processos seletivos, a
+apresentação profissional ganhou novos formatos. O currículo em papel tem sido
+gradualmente substituído por versões digitais que oferecem maior praticidade,
+acessibilidade e possibilidade de atualização contínua (MORAN, 2015). Nesse
+contexto, o desenvolvimento de uma página web para exibição de um currículo
+funcional se apresenta como uma alternativa moderna e eficiente, permitindo ao
+usuário não apenas apresentar informações profissionais, mas também demonstrar
+domínio de tecnologias web.</p>
+
+      <p>Este trabalho tem como foco a criação de uma página web interativa utilizando
+HTML, CSS e JavaScript. O JavaScript, em especial, desempenha papel relevante ao
+permitir a implementação de recursos dinâmicos, possibilitando que o currículo seja
+uma experiência mais visual, organizada e intuitiva para o recrutador.</p>
+    </section>
+
+    <section id="objetivos" class="card">
+      <h2>2. Objetivos</h2>
+      <h3>2.1 Objetivo Geral</h3>
+      <p>Desenvolver uma página web funcional e interativa para apresentação de um
+currículo pessoal, utilizando HTML, CSS e JavaScript.</p>
+
+      <h3>2.2 Objetivos Específicos</h3>
+      <p>a. Estruturar o conteúdo do currículo em formato web utilizando HTML;</p>
+      <p>b. Aplicar princípios de design responsivo com CSS para tornar a página acessível em
+  diferentes dispositivos;</p>
+      <p>c. Empregar JavaScript para adicionar interatividade, como menus dinâmicos e
+  exibição controlada de informações;</p>
+      <p>d. Testar e validar o funcionamento da página em navegadores distintos;</p>
+      <p>e. Documentar o processo de concepção, desenvolvimento e avaliação da solução.</p>
+    </section>
+
+    <section id="metodologia" class="card">
+      <h2>3. Metodologia / Desenvolvimento</h2>
+      <p>O projeto foi desenvolvido seguindo uma abordagem prática e incremental.
+Inicialmente, realizou-se a estruturação das informações profissionais essenciais,
+seguindo o modelo de currículo funcional, no qual as habilidades e competências
+ganham maior destaque em relação à linha cronológica de experiências.</p>
+
+      <h3>3.1 Estrutura HTML</h3>
+      <p>A página foi construída utilizando HTML5, com seções como:</p>
+      <ul>
+        <li>Dados pessoais;</li>
+        <li>Objetivo profissional;</li>
+        <li>Competências e habilidades;</li>
+        <li>Experiências e projetos realizados;</li>
+        <li>Formação acadêmica.</li>
+      </ul>
+      <p>Essa estrutura favorece a navegação organizada e clara.</p>
+
+      <h3>3.2 Estilização com CSS</h3>
+      <p>Utilizou-se CSS3 para:</p>
+      <ul>
+        <li>Definição de cores e tipografia;</li>
+        <li>Ajustes de layout em caixas (flexbox);</li>
+        <li>Adaptabilidade para telas de computador e dispositivos móveis (design
+responsivo).</li>
+      </ul>
+
+      <h3>3.3 Interatividade com JavaScript</h3>
+      <p>O JavaScript foi utilizado para implementar:</p>
+      <ul>
+        <li>Exibição dinâmica de seções (mostrar/ocultar informações);</li>
+        <li>Animações simples ao interagir com o menu;</li>
+        <li>Validação de formulário de contato (quando presente);</li>
+        <li>Possibilidade de personalização futura, como modo claro/escuro.</li>
+      </ul>
+    </section>
+
+    <section id="resultados" class="card">
+      <h2>4. Resultados</h2>
+      <p>Ao final do desenvolvimento, obteve-se uma página web funcional, visualmente
+organizada e responsiva. A interação proporcionada pelo JavaScript possibilitou uma
+navegação simples e eficiente, permitindo que o leitor do currículo escolha quais
+informações visualizar de forma objetiva.</p>
+
+      <p>Além disso, o projeto mostrou-se facilmente expansível, podendo futuramente
+incorporar:</p>
+      <ul>
+        <li>Banco de dados para atualização automática;</li>
+        <li>Portfólio de projetos;</li>
+        <li>Integração com redes profissionais, como LinkedIn.</li>
+      </ul>
+    </section>
+
+    <section id="conclusao" class="card">
+      <h2>5. Conclusão</h2>
+      <p>O desenvolvimento da página web permitiu a consolidação prática dos
+conhecimentos em HTML, CSS e JavaScript, demonstrando como tais tecnologias
+podem ser aplicadas de forma integrada para criar interfaces digitais claras,
+funcionais e modernas. A criação de um currículo funcional em formato web
+representa não apenas uma forma inovadora de apresentação profissional, mas
+também um exemplo aplicado de domínio técnico, podendo gerar impacto positivo
+em processos seletivos.</p>
+
+      <p>O trabalho alcançou plenamente seus objetivos, resultando em um produto digital
+funcional e com possibilidade de futuras melhorias e ampliações.</p>
+    </section>
+
+    <section id="referencias" class="card">
+      <h2>Referências</h2>
+      <p>MORAN, José Manuel. A educação que desejamos: novos desafios e como chegar lá.
+5. ed. Campinas: Papirus, 2015.</p>
+      <p>CASTRO, Diego Eis. JavaScript: Guia do Programador. Novatec Editora, 2021.</p>
+      <p>DUCKETT, Jon. HTML e CSS: Projete e Construa Websites. Alta Books, 2013.</p>
+      <p>FLANAGAN, David. JavaScript: O Guia Definitivo. 7ª ed. O'Reilly Media, 2020.</p>
+
+      <pre>
+	1. Introdução
+	2. Objetivos
+	2.1 Objetivo Geral
+	2.2 Objetivos Específicos
+
+	3. Metodologia / Desenvolvimento
+	3.1 Estrutura HTML
+	3.2 Estilização com CSS
+	3.3 Interatividade com JavaScript
+
+	4. Resultados
+	5. Conclusão
+	Referências
+      </pre>
+    </section>
+
+    <footer>
+      <p>Projeto prático – Parte 2 • Rafael da Silva Leite • Unic – Beira Rio • 2025</p>
+    </footer>
+  </div>
+
+  <script>
+    function goTo(id){
+      const el = document.getElementById(id);
+      if(el){ window.scrollTo({top: el.offsetTop - 12, behavior: 'smooth'});
+      }
+    }
+    function printDoc(){ window.print(); }
+  </script>
+</body>
+</html>
